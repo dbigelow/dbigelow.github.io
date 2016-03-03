@@ -49,37 +49,33 @@
                     <a id="links-link" class="sidebar" href="#">Contact</a>
                 </li>
             </ul>
+            
         </div>
         <div id="page-content-wrapper">
             <div id="home" class="container-fluid partition">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>About Me</h1>
-                    </div>
+                <div class="col-lg-12">
+                    <h1>About Me</h1>
                 </div>
             </div>
             <div id="projects" class="container-fluid partition" style="display: none;">
-            	<div class="row">
-            		<div class="col-lg-12">
-            			<h1>Projects</h1>
-        			</div>
+        		<div class="col-lg-12">
+        			<h1>Projects</h1>
     			</div>
             </div>
             <div id="links" class="container-fluid partition" style="display: none;">
-            	<div class="row">
-            		<div class="col-lg-12">
-            			<h1>External Links</h1>
-        			</div>
-    			</div>	
+        		<div class="col-lg-12">
+        			<h1>External Links</h1>
+    			</div>
         	</div>
-        	<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
         </div>
     </div>
-
+<button class="btn btn-default" id="menu-toggle"><span id="toggle-button" class="glyphicon glyphicon-chevron-left"></span></button>
     <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
+        $("#toggle-button").toggleClass("glyphicon-chevron-left")
+        $("#toggle-button").toggleClass("glyphicon-chevron-right")
     });
     $(".sidebar").click(function(e) {
     	e.preventDefault();
